@@ -1,0 +1,5 @@
+.docz/.cache
+.docz/node_modules/
+node_modules/
+.git/
+*.lockb

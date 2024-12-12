@@ -1,0 +1,148 @@
+---
+name: Tekst formatering i Wordpress (fed, kursiv, understregning, links)
+route: /tekster
+menu: Tekstformatering
+---
+
+# Tekstformattering i Wordpress (fed, kursiv, understregning, links)
+
+**Der er mange måder at formattere tekst på, på din hjemmeside. Uanset om du ønsker <strong>fed</strong>, _skrå_ eller <u>understreget</u> tekst, er det nemt at gøre i Wordpress. 
+Det minder mest af alt om at skrive i Word, Google Docs eller lignende skriveprogram.**
+
+** Formatteringsmuligheder **
+- [Fed tekst](#fed-tekst)
+- [Kursiv tekst](#kursiv-tekst)
+- [Understreget tekst](#understreget-tekst)
+- [Gennemstreget tekst](#gennemstreget-tekst)
+- [Citat tekst](#citat-tekst)
+- [Link](#link)
+
+** Yderligere **
+- [Alle markdown tags](#alle-markdown-tags)
+- [Alle genvejstaster](#alle-genvejstaster)
+- [Alle HTML tags](#alle-html-tags)
+
+
+## Kursiv tekst
+
+1. [Med Markdown](#med-markdown)
+2. [Med Gutenberg Editor](#med-wordpress-gutenberg-editor)
+3. [Med genvejstaster](#med-genvejstaster)
+4. [Med HTML tags](#med-html-og-css-tags)
+
+### Med markdown
+Imens du skriver kan du omringe teksten med **`*`** eller **`_`** for at gøre teksten _kursiv_.
+
+```md
+_Denne tekst vil være kursiv_
+*Denne tekst vil også være kursiv*
+Denne tekst vil være almindelig
+```
+
+### Med Wordpress' Gutenberg Editor
+- Marker teksten du ønsker at gøre kursiv
+- Klik på **I** i værktøjlinjen for at gøre teksten kursiv.
+
+### Med genvejstaster
+- Marker teksten du ønsker at gøre kursiv
+- Brug **CTRL + I** for at gøre teksten kursiv.
+
+### Med HTML tags
+
+## Understreget tekst
+### Med markdown
+Markdown understøtter ikke understregning direkte, men du kan bruge HTML-tags i markdown-filer.
+
+```
+<u>Denne tekst vil være understreget</u>
+<ins>Denne tekst vil også være understreget</ins>
+```
+
+### Med Gutenberg Editor
+- Marker teksten, du ønsker at understrege.
+- Klik på det __skrå i__ værktøjslinjen for at understrege teksten
+
+OBS: Understregning er ikke altid synlig i temaer, medmindre det understøttes af CSS.
+
+### Med genvejstaster
+- Marker teksten, du ønsker at understrege.
+- Brug **CTRL + U** for at understrege markeret tekst.
+
+### Med HTML tags
+Du kan også tilføje understregning ved hjælp af HTML-tags.
+
+```html
+<u>Denne tekst er understreget</u>
+<ins>Denne tekst er også understreget</ins>
+```
+
+## Tilføj et citat
+### Med markdown
+Brug **>** før teksten for at oprette et citat i markdown.
+
+```md
+> Dette er et citat i markdown
+```
+
+> Dette er et resultatet af markdown-citatet
+
+### Med Gutenberg Editor
+1. Klik på + i editoren, og vælg blokken Citat.
+2. Indtast din tekst i citatblokken.
+
+### Med genvejstaster
+Brug **CTRL + SHIFT + Q*** for at oprette en **citatblok** i Gutenberg Editor.
+
+### Med HTML tags
+Brug **`<blockquote>`** tagget til at tilføje et citat - afslut med **`</blockquote>`** efter din citation.
+
+```html
+<blockquote>
+  Sådan ser et citat ud i HTML
+</blockquote>
+```
+
+<blockquote>
+  Dette er et citat tilføjet med HTML.
+</blockquote>
+
+## Alle markdown tags
+Her er markdown tags til at formattere tekst nemt og hurtigt
+```md
+**tekst** = Fed
+__tekst__ = Fed
+_tekst_ = Kursiv
+*tekst* = Kursiv
+[tekst](https://dit-link.dk) = link
+![billedetekst](https://dit-link.dk/billede.jpg) = billede
+```
+ 
+## Alle Genvejstaster
+Her er genvejstasterne til at formattere tekst nemt og hurtigt
+- **CTRL + B** = **Fed**
+- **CTRL + I** = *Skrå/Kursiv* 
+- **CTRL + U** = <u>Understreget</u>
+- **CTRL + K** = <a title="#">Indsæt link</a>
+
+![Genvejstaster](./text-formatting.gif)
+
+## Alle HTML tags
+```html
+<b>Denne tekst vil blive fed</b>
+<strong>Denne tekst vil også blive fed</strong>
+<i>Denne tekst vil være skrå</i>
+<em>Denne tekst vil også være skrå</em>
+<u>Denne tekst vil være understreget</u>
+<ins>Denne tekst vil også være understreget</ins>
+<s>Denne tekst vil være gennemstreget</s>
+<del>Denne tekst vil også være gennemstreget</del>
+<mark>Denne tekst vil være markeret</mark>
+```
+
+<b>Denne tekst vil blive fed</b><br />
+<strong>Denne tekst vil også blive fed</strong><br />
+<u>Denne tekst vil være understreget  </u> <br />
+<u>Denne tekst vil også være understreget</u> <br />
+<s>Denne tekst vil være gennemstreget</s> <br />
+<s>Denne tekst vil også være gennemstreget</s> <br />
+<mark>Denne tekst vil være markeret</mark>  
